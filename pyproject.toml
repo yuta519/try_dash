@@ -1,0 +1,11 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "try_dash"
+version = "1.0"
+dependencies = ["dash", "pandas"]
+
+[project.optional-dependencies]
+dev = ["mypy", "ruff", "pre-commit"]
