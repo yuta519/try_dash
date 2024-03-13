@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "try_dash"
 version = "1.0"
-dependencies = ["dash", "pandas", "dash_bootstrap_components"]
+dependencies = ["dash", "pandas", "dash_bootstrap_components", "gunicorn"]
 
 [project.optional-dependencies]
 dev = ["mypy", "ruff", "pre-commit"]

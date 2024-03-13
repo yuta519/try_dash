@@ -29,5 +29,7 @@ app.layout = html.Div([
     dbc.Container([dbc.Row([dbc.Col(id="chart", lg=12)])]),
 ])
 
+server = app.server
+
 if __name__ == '__main__':
     app.run(debug=True)
