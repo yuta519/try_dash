@@ -10,6 +10,16 @@ pip install --editable ."[dev]"
 ```
 
 ## Run
+- Single Page with simple python command
 ```bash
 python src/examples/forecast.py
+```
+
+- Multi Page with
+```bash
+gunicorn src.app:server
+
+or if the path for `gunicorn` is not set
+
+.venv/bin/gunicorn src.app:server
 ```
