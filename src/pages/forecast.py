@@ -7,7 +7,7 @@ from layout.forecast import create_layout
 from plot.forecast import create_forecast_plot_data
 
 
-dash.register_page(__name__)
+dash.register_page(__name__, path="/")
 
 
 @callback(Output("chart", "children"), Input("url", "href"))
